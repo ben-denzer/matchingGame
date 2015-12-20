@@ -1,0 +1,88 @@
+﻿body {
+position: relative;
+width: 60%;
+margin-right: auto; 
+margin-left: auto;
+text-align: center;
+}
+
+h1 {
+font-size: 2.2em;
+font-weight: bold;
+}
+
+.screen {
+position: relative;
+margin: 50px;
+height: 500px;
+width: 500px;
+background-color: #cccccc;
+border: 3px solid black;
+overflow: show;
+}
+
+#error {
+	position: relative;
+	font-size: 1.5em; 
+	background-color: yellow;
+	z-index: 20;
+}
+
+.card {
+	position: absolute;
+	background-color: blue;
+	height: 110px;
+	width: 80px;
+	display: inline-block;
+	border: 2px solid black;
+	border-radius: 10px;
+	text-align: center;
+	font-size: 2em;
+	font-weight: bold;
+}
+
+#cOne, #cTwo, #cThree, #cTen {
+	top: 100px;
+}
+
+#cFour, #cFive, #cSix, #cEleven {
+	top: 230px;
+}
+
+#cSeven, #cEight, #cNine, #cTwelve {
+	top: 360px;
+}
+
+#cOne, #cFour, #cSeven {
+	left: 50px;
+}
+
+#cTwo, #cFive, #cEight {
+	left: 150px;
+}
+
+#cThree, #cSix, #cNine {
+	left: 250px;
+}
+
+#cTen, #cEleven, #cTwelve {
+	left: 350px;
+}
+
+.blue {
+	background-color: blue;
+}
+
+.white {
+	background-color: white;
+}
+
+
+#win {
+font-size: 5em;
+color: white;
+margin-right: auto; 
+margin-left: auto;
+}
+
+
