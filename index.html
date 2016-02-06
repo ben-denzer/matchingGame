@@ -4,43 +4,69 @@
 	<meta charset="utf-8">
 	<title>Match The Card Game</title>
 	<script type="text/javascript" src="jquery-1.11.0.min.js"></script>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	<script type="text/javascript" src="matching2.js"></script>
-	<link rel="stylesheet" type="text/css" href="matching.css" media="all">
+	<link rel="stylesheet" type="text/css" href="matching2.css" media="all">
 </head>
 <body>
-	<div class="screen" id="screen">
-		<h1>Match The Card Game</h1>
+	<div class="container" id="main">
+		<div class="page-header">
+			<h1>Memory</h1>
+			<h3>by Ben-Denzer</h3>
+		</div>
 		
 		<div class="big" id="error">You need to have JavaScript enabled to play this game</div>
-		
-		<div class="card" id="cOne"></div>
-		
-		<div class="card" id="cTwo"></div>
-		
-		<div class="card" id="cThree"></div>
 
-		<div class="card" id="cFour"></div>
-		
-		<div class="card" id="cFive"></div>
-		
-		<div class="card" id="cSix"></div>
-		
-		<div class="card" id="cSeven"></div>
-		
-		<div class="card" id="cEight"></div>
-				
-		<div class="card" id="cNine"></div>
-		
-		<div class="card" id="cTen"></div>
-		
-		<div class="card" id="cEleven"></div>
-		
-		<div class="card" id="cTwelve"></div>
-		
-		<div class="big" id="win">
-			<br>YOU WIN!<br>
-			<input type="submit" id="restart" href="#" value="Start Over">
+		<div class="row">
+			<div class="col-xs-3">
+				<div class="card" id="cOne"></div>
+			</div>
+			<div class="col-xs-3">
+				<div class="card" id="cTwo"></div>
+			</div>
+			<div class="col-xs-3">
+				<div class="card" id="cThree"></div>
+			</div>
+			<div class="col-xs-3">
+				<div class="card" id="cFour"></div>
+			</div>
 		</div>
-	</div>
+
+		<div class="row">
+			<div class="col-xs-3">
+				<div class="card" id="cFive"></div>
+			</div>
+			<div class="col-xs-3">
+				<div class="card" id="cSix"></div>
+			</div>
+			<div class="col-xs-3">	
+				<div class="card" id="cSeven"></div>
+			</div>
+			<div class="col-xs-3">	
+				<div class="card" id="cEight"></div>
+			</div>
+		</div>	
+		
+		<div class="row">
+			<div class="col-xs-3">
+				<div class="card" id="cNine"></div>
+			</div>
+			<div class="col-xs-3">	
+				<div class="card" id="cTen"></div>
+			</div>
+			<div class="col-xs-3">	
+				<div class="card" id="cEleven"></div>
+			</div>
+			<div class="col-xs-3">	
+				<div class="card" id="cTwelve"></div>
+			</div>
+		</div>
+
+		<div class="big" id="win">
+			YOU WIN!<br>
+			<span class="smaller">Click anywhere to start over</span>
+		</div>
+	</div><!-- /container -->
 </body>
 </html>

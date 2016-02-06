@@ -4,10 +4,25 @@
 	$('#win').hide();
 	var tempValOne;
 	var tempValTwo;
-	var setBlue;
 	var cardsUp = 0;
 	var match = 6; 
-	var cardArray = ['A', 'A', 'B', 'B', 'C', 'C', 'D', 'D', 'E', 'E', 'F', 'F'] 
+	var cardArray = [
+		'images/caterpillar.png',
+		'images/caterpillar.png',
+		'images/ladybug.png',
+		'images/ladybug.png',
+		'images/fish.png',
+		'images/fish.png',
+		'images/bee.png',
+		'images/bee.png',
+		'images/lizard.png',
+		'images/lizard.png',
+		'images/snail.png',
+		'images/snail.png',
+	]; 
+
+	//http://www.titanui.com/19619-set-of-vector-cute-cartoon-animals/
+
 	var cardOne = $('#cOne');
 	var cardTwo = $('#cTwo');
 	var cardThree = $('#cThree');
@@ -37,14 +52,14 @@
 	var cardName;
 	var cardLetter;
 	function CardFunc( cardName, cardLetter ) {
-		if (cardName.hasClass('white') && cardName.text('')) {
-						cardName.append('<br>' + cardArray[cardLetter]);
+		if (cardName.hasClass('white') && cardName.html('')) {
+						cardName.html('<img class="cardImg" src="' + cardArray[cardLetter] + '" alt="">');
 		}	
 	}
 	
 //FLIP CARDS BACK OVER (USED IN ONCLICK)
 	var blue = function() {
-		$('.card').removeClass('white').text("");
+		$('.card').removeClass('white').html('');
 	}
 
 
@@ -87,7 +102,7 @@
 //SEE IF IT MATCHES
 
 			tempValOne = tempValTwo;
-			tempValTwo = $(this).text();
+			tempValTwo = $(this).html();
 			
 			if (cardsUp === 2) {
 					
@@ -98,6 +113,9 @@
 					
 					if (match === 0) {
 						$('#win').show('slow');
+						setTimeout(function() {
+							window.addEventListener('click', restart);
+						}, 500);
 					}
 					
 				}
@@ -112,16 +130,17 @@
 		}
 			
 	});
-	
-	$('#restart').click(function() { 
-		$('.card').removeClass('white').text('').show();
+
+	function restart() {
+		window.removeEventListener('click', restart);
+		$('.card').removeClass('white').html('').show();
 		match = 6;
 		cardsUp = 0;
 		clear();
 		$('#error').hide();
 		$('#win').hide();
 		cardText(cardArray);
-	});
+	}
 
 });
 

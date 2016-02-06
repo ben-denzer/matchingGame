@@ -1,0 +1,48 @@
+body {
+	background-image: url("images/forest1.jpg");
+	background-size: cover;
+}
+
+h1 {
+	margin-top: -25px;
+}
+
+h3 {
+	margin-top: -10px;
+}
+
+.container {
+	margin-top: 25px;
+	max-width: 480px;
+	min-height: 500px;
+	background-color: #aaa;
+	border-radius: 15px;
+	text-align: center;
+}
+
+.card {
+	height: 100px;
+	width: 75px;
+	margin: 10px auto 10px auto;
+	border: 2px solid black;
+	border-radius: 5px;
+	background-image: url("images/cardbackground.png");
+}
+
+.cardImg {
+	margin-top: 15px;
+}
+
+.white {
+	background-image: none;
+	background-color: white;
+}
+
+#win {
+	font-size: 40pt;
+	color: green;
+}
+
+.smaller {
+	font-size: 28pt;
+}

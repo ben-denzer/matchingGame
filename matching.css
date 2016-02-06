@@ -41,6 +41,10 @@ overflow: show;
 	font-weight: bold;
 }
 
+.card:hover {
+	cursor: pointer;
+}
+
 #cOne, #cTwo, #cThree, #cTen {
 	top: 100px;
 }
